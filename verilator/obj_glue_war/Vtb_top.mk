@@ -1,0 +1,75 @@
+# Verilated -*- Makefile -*-
+# DESCRIPTION: Verilator output: Makefile for building Verilated archive or executable
+#
+# Execute this makefile from the object directory:
+#    make -f Vtb_top.mk
+
+default: ../tb_glue_war
+
+### Constants...
+# Perl executable (from $PERL)
+PERL = perl
+# Path to Verilator kit (from $VERILATOR_ROOT)
+VERILATOR_ROOT = /usr/local/share/verilator
+# SystemC include directory with systemc.h (from $SYSTEMC_INCLUDE)
+SYSTEMC_INCLUDE ?= 
+# SystemC library directory with libsystemc.a (from $SYSTEMC_LIBDIR)
+SYSTEMC_LIBDIR ?= 
+
+### Switches...
+# SystemC output mode?  0/1 (from --sc)
+VM_SC = 0
+# Legacy or SystemC output mode?  0/1 (from --sc)
+VM_SP_OR_SC = $(VM_SC)
+# Deprecated
+VM_PCLI = 1
+# Deprecated: SystemC architecture to find link library path (from $SYSTEMC_ARCH)
+VM_SC_TARGET_ARCH = linux
+
+### Vars...
+# Design prefix (from --prefix)
+VM_PREFIX = Vtb_top
+# Module prefix (from --prefix)
+VM_MODPREFIX = Vtb_top
+# User CFLAGS (from -CFLAGS on Verilator command line)
+VM_USER_CFLAGS = \
+	-std=c++17 -O2 -I/Work/Projects/ThePokeyProject_MiSTer/ref/shim -I/Work/Projects/ThePokeyProject_MiSTer/ref/mame_0289 -I/Work/Projects/ThePokeyProject_MiSTer/ref -I/Work/Projects/ThePokeyProject_MiSTer/verilator \
+
+# User LDLIBS (from -LDFLAGS on Verilator command line)
+VM_USER_LDLIBS = \
+
+# User .cpp files (from .cpp's on Verilator command line)
+VM_USER_CLASSES = \
+	pokey \
+	pokey_ref \
+	tb_pokey \
+
+# User .cpp directories (from .cpp's on Verilator command line)
+VM_USER_DIR = \
+	/Work/Projects/ThePokeyProject_MiSTer/ref \
+	/Work/Projects/ThePokeyProject_MiSTer/ref/mame_0289 \
+	/Work/Projects/ThePokeyProject_MiSTer/verilator \
+
+
+### Default rules...
+# Include list of all generated classes
+include Vtb_top_classes.mk
+# Include global rules
+include $(VERILATOR_ROOT)/include/verilated.mk
+
+### Executable rules... (from --exe)
+VPATH += $(VM_USER_DIR)
+
+pokey.o: /Work/Projects/ThePokeyProject_MiSTer/ref/mame_0289/pokey.cpp
+	$(OBJCACHE) $(CXX) $(CXXFLAGS) $(CPPFLAGS) $(OPT_FAST) -c -o $@ $<
+pokey_ref.o: /Work/Projects/ThePokeyProject_MiSTer/ref/pokey_ref.cpp
+	$(OBJCACHE) $(CXX) $(CXXFLAGS) $(CPPFLAGS) $(OPT_FAST) -c -o $@ $<
+tb_pokey.o: /Work/Projects/ThePokeyProject_MiSTer/verilator/tb_pokey.cpp
+	$(OBJCACHE) $(CXX) $(CXXFLAGS) $(CPPFLAGS) $(OPT_FAST) -c -o $@ $<
+
+### Link rules... (from --exe)
+../tb_glue_war: $(VK_USER_OBJS) $(VK_GLOBAL_OBJS) $(VM_PREFIX)__ALL.a $(VM_HIER_LIBS)
+	$(LINK) $(LDFLAGS) $^ $(LOADLIBES) $(LDLIBS) $(LIBS) $(SC_LIBS) -o $@
+
+
+# Verilated -*- Makefile -*-

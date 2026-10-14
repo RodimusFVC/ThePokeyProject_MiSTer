@@ -1,0 +1,1 @@
+PASS /Work/Projects/ThePokeyProject_MiSTer/traces/ccastles_play60.ptr: 75018240 clocks, 2 chip(s), 150042809 state compares, 16505 read checks (glue, old port protocol), 0 divergences; coverage: out_raw changes 38556, irq pin changes 0, pot counter changes 912, steps with a borrow pending 10174382; ref vs MAME read values: 75/6327 differ (info, plan M-1)

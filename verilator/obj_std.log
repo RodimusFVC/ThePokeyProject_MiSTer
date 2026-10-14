@@ -1,0 +1,6 @@
+%Warning-WIDTH: /Work/Projects/ThePokeyProject_MiSTer/verilator/tb_top.sv:8:56: Operator VAR 'S1_ALLPOT_CB' expects 1 bits on the Initial value, but Initial value's CONST '32'h1' generates 32 bits.
+                                                                              : ... In instance tb_top
+    8 |     parameter [7:0] S1_POT_CB = 8'h00, parameter [0:0] S1_ALLPOT_CB = 1'b0
+      |                                                        ^~~~~~~~~~~~
+                ... For warning description see https://verilator.org/warn/WIDTH?v=4.204
+                ... Use "/* verilator lint_off WIDTH */" and lint_on around source to disable this message.

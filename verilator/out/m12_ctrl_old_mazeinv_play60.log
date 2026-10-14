@@ -1,0 +1,13 @@
+DIVERGE clk 19747453 (13060.485 ms) after-step chip 0
+  field out_raw          ref=8 dut=0
+  last 16 events: W@19690426:0:5=00 W@19690515:0:7=00 r@19714275:0:1=E4 W@19715522:0:1=00 W@19715649:0:7=00 r@19739475:0:3=E4 W@19740804:0:3=00 W@19740893:0:5=00 W@19740982:0:7=00 W@19741070:1:1=00 W@19741158:1:3=00 W@19741246:1:5=00 W@19741334:1:7=00 r@19741334:0:1=E4 W@19741463:0:1=A8 W@19741474:0:0=10
+  window (after-step rows; * = differs):
+   k=19747445   out_raw ref=0 dut=0
+   k=19747446   out_raw ref=0 dut=0
+   k=19747447   out_raw ref=0 dut=0
+   k=19747448   out_raw ref=0 dut=0
+   k=19747449   out_raw ref=0 dut=0
+   k=19747450   out_raw ref=0 dut=0
+   k=19747451   out_raw ref=0 dut=0
+   k=19747452   out_raw ref=0 dut=0
+   k=19747453   out_raw ref=8 dut=0*

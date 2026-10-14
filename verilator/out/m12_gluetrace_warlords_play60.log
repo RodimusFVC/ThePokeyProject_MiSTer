@@ -1,0 +1,1 @@
+PASS /Work/Projects/ThePokeyProject_MiSTer/traces/warlords_play60.ptr: 90745200 clocks, 1 chip(s), 90770012 state compares, 15933 read checks (glue, old port protocol), 0 divergences; coverage: out_raw changes 89534, irq pin changes 0, pot counter changes 631092, steps with a borrow pending 57565101; ref vs MAME read values: 1910/13783 differ (info, plan M-1)

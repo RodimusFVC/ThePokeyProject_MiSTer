@@ -1,0 +1,13 @@
+DIVERGE clk 375 (0.300 ms) after-step chip 0
+  field out_raw          ref=8 dut=0
+  last 16 events: W@302:1:2=00 r@302:0:1=00 W@312:0:1=00 r@312:1:1=00 W@317:1:1=00 r@317:0:0=00 W@327:0:0=00 r@327:1:0=00 W@332:1:0=00 W@342:0:F=07 W@346:1:F=07 r@346:0:0=04 W@359:0:0=3F r@359:1:0=0D W@368:1:0=5F W@374:0:1=A8
+  window (after-step rows; * = differs):
+   k=367        out_raw ref=0 dut=0
+   k=368        out_raw ref=0 dut=0
+   k=369        out_raw ref=0 dut=0
+   k=370        out_raw ref=0 dut=0
+   k=371        out_raw ref=0 dut=0
+   k=372        out_raw ref=0 dut=0
+   k=373        out_raw ref=0 dut=0
+   k=374        out_raw ref=0 dut=0
+   k=375        out_raw ref=8 dut=0*

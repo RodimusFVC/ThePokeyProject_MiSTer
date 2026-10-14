@@ -1,0 +1,1 @@
+PASS /Work/Projects/ThePokeyProject_MiSTer/traces/milliped_play60.ptr: 90745200 clocks, 2 chip(s), 181498123 state compares, 23475 read checks (glue, old port protocol), 0 divergences; coverage: out_raw changes 154369, irq pin changes 0, pot counter changes 479, steps with a borrow pending 2819010; ref vs MAME read values: 15/7721 differ (info, plan M-1)

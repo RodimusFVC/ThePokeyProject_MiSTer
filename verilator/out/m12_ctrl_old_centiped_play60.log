@@ -1,0 +1,13 @@
+DIVERGE clk 10914234 (7218.409 ms) after-step chip 0
+  field out_raw          ref=0 dut=40
+  last 16 events: W@10813418:0:3=00 W@10813436:0:1=00 W@10838565:0:5=00 W@10838612:0:3=00 W@10838630:0:1=00 W@10863767:0:7=00 W@10863779:0:5=00 W@10863826:0:3=00 W@10863844:0:1=00 W@10888965:0:5=00 W@10889012:0:3=00 W@10889030:0:1=00 W@10914157:0:7=00 W@10914169:0:5=00 W@10914224:0:2=E0 W@10914232:0:3=A4
+  window (after-step rows; * = differs):
+   k=10914226   out_raw ref=0 dut=0
+   k=10914227   out_raw ref=0 dut=0
+   k=10914228   out_raw ref=0 dut=0
+   k=10914229   out_raw ref=0 dut=0
+   k=10914230   out_raw ref=0 dut=0
+   k=10914231   out_raw ref=0 dut=0
+   k=10914232   out_raw ref=0 dut=0
+   k=10914233   out_raw ref=0 dut=0
+   k=10914234   out_raw ref=0 dut=40*

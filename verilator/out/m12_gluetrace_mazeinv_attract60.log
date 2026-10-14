@@ -1,0 +1,1 @@
+PASS /Work/Projects/ThePokeyProject_MiSTer/traces/mazeinv_attract60.ptr: 90745200 clocks, 2 chip(s), 181495186 state compares, 13373 read checks (glue, old port protocol), 0 divergences; coverage: out_raw changes 0, irq pin changes 0, pot counter changes 479, steps with a borrow pending 0; ref vs MAME read values: 36/4784 differ (info, plan M-1)

@@ -1,0 +1,1 @@
+PASS /Work/Projects/ThePokeyProject_MiSTer/traces/centiped_play60.ptr: 90745200 clocks, 1 chip(s), 90745583 state compares, 379 read checks (merge), 0 divergences; coverage: out_raw changes 139206, irq pin changes 0, pot counter changes 228, steps with a borrow pending 12517242; ref vs MAME read values: 52/379 differ (info, plan M-1)

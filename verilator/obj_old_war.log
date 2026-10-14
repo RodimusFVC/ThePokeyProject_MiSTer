@@ -1,0 +1,8 @@
+%Warning-TIMESCALEMOD: /Work/Projects/ThePokeyProject_MiSTer/verilator/tb_top.sv:6:8: Timescale missing on this module as other modules have it (IEEE 1800-2017 3.14.2.3)
+    6 | module tb_top #(
+      |        ^~~~~~
+                       /Work/Projects/Arcade-Centipede_MiSTer/rtl/sound/pokey/complete_address_decoder.v:13:8: ... Location of module with timescale
+   13 | module complete_address_decoder(addr_in, addr_decoded);
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~
+                       ... For warning description see https://verilator.org/warn/TIMESCALEMOD?v=4.204
+                       ... Use "/* verilator lint_off TIMESCALEMOD */" and lint_on around source to disable this message.

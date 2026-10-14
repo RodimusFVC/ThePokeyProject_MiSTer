@@ -1,0 +1,1 @@
+PASS fuzz: 100000000 clocks, 2 chip(s), 200403527 state compares, 60608 read checks, 0 divergences, seed 7; coverage: out_raw changes 1913458, irq pin changes 13938, pot counter changes 1902236, steps with a borrow pending 19645239

@@ -1,0 +1,1 @@
+PASS /Work/Projects/ThePokeyProject_MiSTer/traces/mazeinv_play60.ptr: 90745200 clocks, 2 chip(s), 181512718 state compares, 9368 read checks, 0 divergences; coverage: out_raw changes 15192, irq pin changes 0, pot counter changes 479, steps with a borrow pending 0; ref vs MAME read values: 3/9368 differ (info, plan M-1)

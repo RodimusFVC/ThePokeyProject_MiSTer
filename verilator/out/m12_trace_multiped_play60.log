@@ -1,0 +1,1 @@
+PASS /Work/Projects/ThePokeyProject_MiSTer/traces/multiped_play60.ptr: 90745200 clocks, 2 chip(s), 181560366 state compares, 20215 read checks, 0 divergences; coverage: out_raw changes 96102, irq pin changes 0, pot counter changes 479, steps with a borrow pending 2891283; ref vs MAME read values: 53/20215 differ (info, plan M-1)

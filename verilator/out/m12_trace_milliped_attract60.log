@@ -1,0 +1,1 @@
+PASS /Work/Projects/ThePokeyProject_MiSTer/traces/milliped_attract60.ptr: 90745200 clocks, 2 chip(s), 181565450 state compares, 15801 read checks, 0 divergences; coverage: out_raw changes 0, irq pin changes 0, pot counter changes 479, steps with a borrow pending 2581839; ref vs MAME read values: 176/15801 differ (info, plan M-1)

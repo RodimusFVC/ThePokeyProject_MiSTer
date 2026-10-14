@@ -1,0 +1,24 @@
+borrow4to3    CAUGHT by T01_regs: DIVERGE clk 7666 (5.070 ms) after-step chip 0
+link7to6      CAUGHT by T01_regs: DIVERGE clk 32785 (21.683 ms) after-step chip 0
+div28         CAUGHT by T01_regs: DIVERGE clk 30 (0.020 ms) after-step chip 0
+div114        CAUGHT by T01_regs: DIVERGE clk 116 (0.077 ms) after-step chip 0
+p17tap        CAUGHT by T01_regs: DIVERGE clk 15 (0.010 ms) after-step chip 0
+p5xnor        CAUGHT by T01_regs: DIVERGE clk 4 (0.003 ms) after-step chip 0
+p4tap         CAUGHT by T01_regs: DIVERGE clk 5 (0.003 ms) after-step chip 0
+p9tap         CAUGHT by T01_regs: DIVERGE clk 7 (0.005 ms) after-step chip 0
+filt1off      CAUGHT by T01_regs: DIVERGE clk 32791 (21.687 ms) after-step chip 0
+stimer_fs     CAUGHT by T01_regs: DIVERGE clk 1132 (0.749 ms) after-event chip 0
+init_seroc    CAUGHT by T01_regs: DIVERGE clk 2001 (1.323 ms) after-event chip 0
+pot228        CAUGHT by T01_regs: DIVERGE clk 13673 (9.043 ms) after-step chip 0
+irqen_seroc   CAUGHT by T01_regs: DIVERGE clk 1838 (1.216 ms) after-event chip 0
+skctl_same    CAUGHT by T14_audctl: DIVERGE clk 15052 (9.955 ms) after-event chip 0
+link_irq      CAUGHT by T10_irq: DIVERGE clk 31688 (20.958 ms) after-step chip 0
+random_bits   CAUGHT by T01_regs: DIVERGE clk 11 readall chip 0 reg A ref=FF dut=7F
+allpot_pol    CAUGHT by T01_regs: DIVERGE clk 4 readall chip 0 reg 8 ref=FF dut=00
+async_off     CAUGHT by T01_regs: DIVERGE clk 5309 (3.511 ms) after-step chip 0
+volonly       CAUGHT by T01_regs: DIVERGE clk 153 (0.101 ms) after-step chip 0
+poly4sel      CAUGHT by T01_regs: DIVERGE clk 8081 (5.345 ms) after-step chip 0
+init_borrow   CAUGHT by fuzz seed 7 5M : DIVERGE clk 243387 (160.970 ms) after-step chip 1
+potgo_init    CAUGHT by T01_regs: DIVERGE clk 2417 (1.599 ms) after-event chip 0
+audctl_poly9  CAUGHT by T14_audctl --merge: DIVERGE clk 121886 (80.612 ms) after-step chip 0
+0 survivor(s): 

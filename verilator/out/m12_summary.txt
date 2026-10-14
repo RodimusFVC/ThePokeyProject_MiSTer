@@ -1,0 +1,17 @@
+M12 trace: 24 / 24 PASS
+M12 gluetrace: 12 / 12 PASS
+M12 fuzz: 128 / 128 PASS
+M12 glue_fuzz: 64 / 64 PASS
+M12 control (old RTL, out_raw only): 7 / 12 traces DIVERGE (required: every trace with non-zero volume writes)
+  m12_ctrl_old_ccastles_attract60: DIVERGE clk 375 (0.300 ms) after-step chip 0   field out_raw          ref=8 dut=0 
+  m12_ctrl_old_ccastles_play60: DIVERGE clk 375 (0.300 ms) after-step chip 0   field out_raw          ref=8 dut=0 
+  m12_ctrl_old_centiped_attract60: PASS /Work/Projects/ThePokeyProject_MiSTer/traces/centiped_attract60.ptr: 90745200 clocks, 1 chip(s), 90745846
+  m12_ctrl_old_centiped_play60: DIVERGE clk 10914234 (7218.409 ms) after-step chip 0   field out_raw          ref=0 dut=40 
+  m12_ctrl_old_mazeinv_attract60: PASS /Work/Projects/ThePokeyProject_MiSTer/traces/mazeinv_attract60.ptr: 90745200 clocks, 2 chip(s), 181495186
+  m12_ctrl_old_mazeinv_play60: DIVERGE clk 19747453 (13060.485 ms) after-step chip 0   field out_raw          ref=8 dut=0 
+  m12_ctrl_old_milliped_attract60: PASS /Work/Projects/ThePokeyProject_MiSTer/traces/milliped_attract60.ptr: 90745200 clocks, 2 chip(s), 18149632
+  m12_ctrl_old_milliped_play60: DIVERGE clk 15240265 (10079.540 ms) after-step chip 0   field out_raw          ref=C0 dut=0 
+  m12_ctrl_old_multiped_attract60: PASS /Work/Projects/ThePokeyProject_MiSTer/traces/multiped_attract60.ptr: 90745200 clocks, 2 chip(s), 18149625
+  m12_ctrl_old_multiped_play60: DIVERGE clk 10659880 (7050.185 ms) after-step chip 0   field out_raw          ref=0 dut=C0 
+  m12_ctrl_old_warlords_attract60: PASS /Work/Projects/ThePokeyProject_MiSTer/traces/warlords_attract60.ptr: 90745200 clocks, 1 chip(s), 90767899
+  m12_ctrl_old_warlords_play60: DIVERGE clk 8569261 (5667.501 ms) after-step chip 0   field out_raw          ref=4000 dut=0 
